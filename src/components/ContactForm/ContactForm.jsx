@@ -18,7 +18,6 @@ export function ContactForm() {
         id: nanoid(),
       })
     );
-
     form.reset();
   };
 

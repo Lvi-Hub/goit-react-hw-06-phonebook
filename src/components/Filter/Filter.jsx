@@ -10,6 +10,7 @@ export function Filter() {
     const value = e.target.value;
     dispatch(filterSet(value));
   };
+
   return (
     <label className={css.labelFilter}>
       Find contact by name
