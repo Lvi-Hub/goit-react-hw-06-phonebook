@@ -10,17 +10,16 @@ const contactSlice = createSlice({
   ],
   reducers: {
     addContact(state, action) {
-      const isContact = state.filter(
-        contact =>
-          contact.name.toLowerCase() === action.payload.name.toLowerCase()
-      );
+      // const isContact = state.filter(
+      //   contact =>
+      //     contact.name.toLowerCase() === action.payload.name.toLowerCase()
+      // );
 
-      if (isContact.length > 0) {
-        alert('The contact has already existed');
-        return;
-      } else {
-        state.push(action.payload);
-      }
+      // if (isContact.length > 0) {
+      //   alert('The contact has already existed');
+      //   return;
+      // } else {
+      state.push(action.payload);
     },
     removeContact(state, action) {
       return state.filter(contact => contact.id !== action.payload);
